@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="keywords" content="pedidos, pedir, pedi, encarga, encargue, reposteria en corrientes, pasteleria en corrientes, tortas decoradas en corrientes, corrientes capital tortas, postres, desayunos, cafe para llevar, macarons en corrientes, tartas, mesas dulces, corrientes capital">
+    <meta name="description" content="Reposteria artesanal en Corrientes Capital; hacemos tortas y postres a pedido. ¡Completa este formulario para hacer tu pedido!">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title> Hace tu pedido - Floreste Reposteria </title>
+    </head>
+    <body class="bodyPedidos">
+        <header class="barraNav">
+            <a class="logo" href="../index.html"><img src="../media/floreste_transparente-01 (2).png" width="200" height="100" alt="Logo de la empresa"></a>    
+            <nav> <!--Menu de la pagina-->
+                <a href="#nav" class="menu-abrir"><i class="fas fa-bars"></i></a>
+                <ul class="listNav"> 
+                    <li> <a href="../index.html"> Home </a> </li>
+                    <li> <a href="./nosotros.html"> Nosotros </a> </li>
+                    <li> <a href="./productos.html">Productos </a> </li>
+                    <li> <a href="./eventos.html">Eventos </a> </li>
+                    <li> <a href="./pedidos.html">Pedidos </a> </li>
+                </ul>
+                <a href="#" class="menu-cerrar"><i class="far fa-times-circle"></i></a>
+            </nav>
+        </header>
+        <hr>
+        <section>
+            <h1 class="titulo-eventos animate__animated animate__jackInTheBox"> ¿Queres comunicarte con nosotros? Completa el siguiente formulario: </h1>
+            <div class="contenedorForm">
+                <div class="formulario1">
+                    <form class="estiloform" action="#">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" name="Nombre"><br>
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" type="tel" name="telefono"><br>
+                        <label for="email">Email:</label>
+                        <input id="email" type="email"><br>
+                        <label for="producto">Que producto te gustaria encargar:</label>
+                            <select id="producto" name="producto">
+                                <option value="torta_clasica">Torta clasica</option>
+                                <option value="box_desayuno">Box de desayuno</option>
+                                <option value="Postres">Postres</option>
+                                <option value="Tartas">Tartas</option>
+                                <option value="Catering">Catering</option>
+                            </select>
+                        <label for="fechahora">Fecha y horario de entrega:</label>
+                        <input id="fechahora" type="datetime-local" name="fechahora"><br>
+                        <label for="pedido">Aclaraciones de tu pedido:</label><br>
+                        <textarea name="pedido" id="pedido" cols="30" rows="5"></textarea><br>
+                        <label for="newsletter">Te gustaria suscribirte a nuestro Newsletter?</label>
+                        <input id="newsletter" type="checkbox" name="acepta" value="1"/>
+                        <button type="submit" class="btn btn-secondary botonPedidos">Enviar!</button>
+                        <button type="reset" class="btn btn-secondary botonPedidos">Limpiar formulario.</button>
+                    </form>
+                </div>    
+            </div>
+            <p class="textoForm">Si necesitas una respuesta menor a 2 dias habiles, no dudes en llamarnos o contactarnos por <a href="http://wa.me/543795038792">WhatsApp!</a></p>
+        </section>
+        <hr>
+        <footer>
+            <div class="container footer-content footer2">
+                <ul class="footerinfo">
+                    <li>Tucuman 775. Corrientes Capital - Argentina</li>
+                </ul>
+                <ul class="footerRedes">
+                    <li><a href="https://www.facebook.com/FloresteReposteria1"><i class="fab fa-facebook-f"></i></a></li>
+                    <li> <a href="https://www.instagram.com/floreste.reposteria/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="http://wa.me/543795038792"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://goo.gl/maps/yMhpa4mtk61NbYbw6"><i class="fas fa-map-marker-alt"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/8b56f6c33f.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
