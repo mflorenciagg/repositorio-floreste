@@ -419,25 +419,3 @@ cursor: pointer;
     background-color: #f79ea9 !important;
     border: none !important;
 }
-
-/* --- MEDIA QUERIES --- */
-
-@media only screen and (min-device-width : 200px) and (max-device-width : 780px) {
-.fondoIndex {
-    background-image: none;
-    background-color:white;
-    display: block;
-    margin: 0;
-}
-
-.menu-abrir, .menu-cerrar {
-    display: inline-block;
-}
-nav .listNav {
-    display: none;
-}
-nav a {
-    color: black;
-}
-}
-
