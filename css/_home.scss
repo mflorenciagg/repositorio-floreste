@@ -3,20 +3,23 @@
     height: 900px;
     background-image: url(../media/fondo3prueba.png);
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: black;
 }
-
-.flexBienvenidos {
-    height: 30vh;
-    width: auto;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
+section {
+    .flexBienvenidos {
+        height: 30vh;
+        width: auto;
+        padding: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
 }
+
 
 .gridTextos {
     height: 700px;
@@ -27,17 +30,35 @@
         grid-template-areas: 
         "texto1 ."
         ". texto2"
-    }
+}
     h2#texto1 {
         grid-area: texto1;
     }
-    h2#texto2 {
+    p#texto2 {
         grid-area: texto2;
     }
 
-#texto1, #texto2 {
-    padding: 20px;
-    margin: 20px;
-    box-sizing: border-box;
-}
+section {
+    #texto1 {
+        padding: 20px;
+        margin-top: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+    }
+    #texto2 {
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+
+        @media (max-width: 529px) {
+            overflow: hidden;
+        }
+    }
+}    
+
 

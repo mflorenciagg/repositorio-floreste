@@ -15,20 +15,20 @@
 </head>
 <!--Inicio del contenido de la pagina-->
     <body class="fondoIndex">
-        <div>
             <header class="barraNav">
-                <a class="logo" href="index.html"><img src="./media/floreste_transparente-01 (2).png" width="200" height="100" alt="Logo de la empresa"></a>    
-                <nav> 
-                    <ul class="listNav"> 
-                        <li> <a href="index.html"> Home </a> </li>
-                        <li> <a href="pages/nosotros.html"> Nosotros </a> </li>
-                        <li> <a href="pages/productos.html">Productos </a> </li>
-                        <li> <a href="pages/eventos.html">Eventos </a> </li>
-                        <li> <a href="pages/pedidos.html">Pedidos </a> </li>
-                    </ul>
-                </nav>
+                <div class="container1 header-container">
+                    <a class="logo" href="index.html"><img src="./media/floreste_transparente-01 (2).png" width="200" height="100" alt="Logo de la empresa"></a>    
+                    <a href="#nav" class="menu-abrir"><i class="fas fa-ellipsis-h"></i></a>
+                    <nav id="nav"> 
+                            <a href="index.html"> Home </a>
+                            <a href="pages/nosotros.html"> Nosotros </a>
+                            <a href="pages/productos.html">Productos </a>
+                            <a href="pages/eventos.html">Eventos </a>
+                            <a href="pages/pedidos.html">Pedidos </a>
+                            <a href="#" class="menu-cerrar"><i class="fas fa-times"></i></a>
+                    </nav>
+                </div>    
             </header>
-        </div>
         <hr>
         <main>
             <section class="flexBienvenidos">
@@ -37,23 +37,22 @@
             <section class="gridTextos">
                     <h2 id="texto1"> 
                         Somos Floreste Reposteria! Un lugar donde siempre vas a encontrar productos ricos y artesanales! 
-                        </h2>
-                    <h2 id="texto2"> 
+                    </h2>
+                    <p id="texto2"> 
                         Realizamos postres y tortas para los momentos mas lindos de la vida. Lo que mas nos gusta es acompañarlos y compartir sabores con ustedes. 
                         Tambien hacemos box de desayunos y meriendas, servicio de lunch y otras cosas deliciosas. 
-                    </h2>
+                    </p>
             </section>
             <hr>
-            <footer class="container footer-content">
-                <div class="footerDireccion">
-                    <p>Tucuman 775. Corrientes Capital - Argentina.</p>
-                </div>
-                <div>
-                    <ul class="footerRedes">
+            <div class="container footer-content footer2">
+                <ul class="footerinfo">
+                    <li>Tucuman 775. Corrientes Capital - Argentina</li>
+                </ul>
+                <ul class="footerRedes">
                         <li><a href="https://www.facebook.com/FloresteReposteria1" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                        <li> <a href="https://www.instagram.com/floreste.reposteria/"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="http://wa.me/543795038792"><i class="fab fa-whatsapp"></i></a></li>
-                        <li><a href="https://goo.gl/maps/yMhpa4mtk61NbYbw6"><i class="fas fa-map-marker-alt"></i></a></li>
+                        <li><a href="https://www.instagram.com/floreste.reposteria/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="http://wa.me/543795038792"><i class="fab fa-whatsapp" target="_blank"></i></a></li>
+                        <li><a href="https://goo.gl/maps/yMhpa4mtk61NbYbw6" target="_blank"><i class="fas fa-map-marker-alt"></i></a></li>
                     </ul>
                 </div>
             </footer>
