@@ -1,0 +1,43 @@
+
+.fondoIndex {
+    height: 900px;
+    background-image: url(../media/fondo3prueba.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.flexBienvenidos {
+    height: 30vh;
+    width: auto;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.gridTextos {
+    height: 700px;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 0.5rem;
+        grid-template-areas: 
+        "texto1 ."
+        ". texto2"
+    }
+    h2#texto1 {
+        grid-area: texto1;
+    }
+    h2#texto2 {
+        grid-area: texto2;
+    }
+
+#texto1, #texto2 {
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+

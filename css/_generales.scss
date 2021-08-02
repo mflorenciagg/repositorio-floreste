@@ -1,0 +1,49 @@
+//GENERALES
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100vh;
+    position: relative;
+}
+
+//VARIABLES
+$fuentePpal: 'Raleway', sans-serif;
+$colorRosaFuerte: #ff8695;
+$colorRosaMed: #f79ea9;
+$colorFloreste: #eed4d7;
+
+body {
+    background-color: white;
+    font-family: $fuentePpal !important;
+    height: 1200px;
+    width: 100%;
+}
+
+.container1 {
+    max-width: 900px;
+    height: 0 auto;
+}
+
+
+//FUENTES
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 34px;
+    padding: 15px 15px 20px 25px;
+}
+
+h2, h3 {
+    color: white;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+

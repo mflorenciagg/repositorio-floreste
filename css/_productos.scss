@@ -1,0 +1,64 @@
+
+
+.fotoProductos {
+    box-sizing: border-box;
+    display: flex;
+    margin: 30px;
+    align-content: center;
+}
+.tituloProductos {
+    color: $colorRosaFuerte;
+    text-align: center;
+    margin: 50px;
+    padding: 5px;
+}
+
+.cardsBT {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardsBT img {
+    filter: grayscale(50%) contrast(80%);
+}
+
+.claseSinBorde {
+    border: none !important;
+}
+.estilo-cajas-productos {
+    display: flex;
+    text-align: center;
+}
+
+.estilo-cajas-productos:hover {
+transition: all .5s ease-in-out;
+cursor: pointer;
+}
+
+.btn-colorfloreste {
+    background-color: $colorRosaMed !important;
+    border: none !important;
+}
+
+.hover-fade img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-fade:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.5)";
+    filter: alpha(opacity=0.5);
+    opacity: 0.5;
+}
+

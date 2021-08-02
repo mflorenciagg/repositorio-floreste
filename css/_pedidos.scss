@@ -1,0 +1,48 @@
+
+.bodyPedidos {
+    height: 900px;
+}
+.titulo-eventos {
+    font-size: 24px;
+    color: $colorRosaMed;
+    margin-bottom: 30px;
+}
+.contenedorForm {
+    display: flex;
+    justify-content: center;
+    background-image: url(../media/producto-alfajores.JPG);
+    background-size: cover;
+	border-radius: 3px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.formulario1 {
+    width: 400px;
+    height: auto;
+	border-radius: 3px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	position: relative; 
+    background-color: #fff;  
+    box-shadow: 10px 15px 25px 0 rgba(.2,0,0,1);;  
+}
+
+.estiloform {
+    align-items: center;
+}
+
+.textoForm {
+    margin-top: 30px;
+    font-size: 18px;
+    color: $colorRosaMed;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+.botonPedidos {
+    background-color: $colorRosaMed !important;
+    border: none !important;
+}

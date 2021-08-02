@@ -1,0 +1,36 @@
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.barraNav {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    padding: 10px 10%;
+    margin: 5px;
+}
+
+header nav{
+width: 50%;
+height: 100%;
+margin: 20px auto;
+}
+
+.listNav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+list-style-type: none;
+}
+
+.listNav a{
+font-size: 18px;
+font-weight: 700;
+color: black;
+}
+
+.listNav li {
+    list-style-type: none;
+    text-decoration: $colorRosaFuerte;
+}

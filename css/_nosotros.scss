@@ -1,0 +1,68 @@
+
+.carruselfotos {
+    width: 1500px !important;
+    height: auto;
+    margin: 60px;
+    padding: 25px;
+    }
+    
+    .contenedorNosotros {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .fotoNosotros {
+        margin: 30px;
+        padding: 15px;
+        width: 650px;
+    }
+    .colorh1 {
+        color: $colorRosaFuerte;
+    }
+    .textoHistoria {
+        color: black;
+        padding: 20px;
+        margin: 40px 30px;
+        font-size: 18px;
+        text-align: justify;
+    }
+    
+    .contenedorCarrusel {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    
+    .footer2 {
+    height: auto;
+    }
+    
+    .footer2 a {
+        color: black;
+    }
+    
+    .gridMapa {
+        height: 400px;
+        display: grid;
+        grid-template-columns: 50% 1fr; 
+        grid-template-rows: auto auto;
+        grid-gap: 0.5rem;
+        grid-template-areas: 
+            "tituloMapa mapaGoogle"
+            "informacion1 mapaGoogle"
+        }
+    
+        h2#tituloMapa {
+            grid-area: tituloMapa;
+            margin: 20px;
+            color: $colorRosaFuerte;
+        }
+        p#informacion1 {
+            grid-area: informacion1;
+            padding: 10px;
+            margin: 5px;
+        }
+        iframe#mapaGoogle {
+            grid-area: mapaGoogle;
+            margin-top: 20px;
+        }
+    
