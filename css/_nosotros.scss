@@ -9,20 +9,19 @@
 .contenedorNosotros {
         display: flex;
         flex-wrap: nowrap;
-
+        
         @media (max-width: 768px) {
             display: block;
             flex-direction: column;
             align-items: center;
         }
-    
-    
+        
     .fotoNosotros {
         margin: 30px;
         padding: 15px;
         width: 650px;
-
         @media (max-width: 768px) {
+            display: block;
             flex-direction: column;
             align-items: center;
         }
@@ -30,12 +29,6 @@
 
     .textoSobreNosotros {
         text-align: justify;
-
-        @media (max-width: 768px) {
-            display: block;
-            flex-direction: column;
-            align-items: center;
-        }
     }
     .colorh1 {
         color: $colorRosaFuerte;
@@ -47,12 +40,6 @@
         margin: 40px 30px;
         font-size: 18px;
         text-align: justify;
-
-        @media (max-width: 768px) {
-
-            flex-direction: column;
-            align-items: center;
-        }
     }
     
 .contenedorCarrusel {
@@ -67,11 +54,14 @@
 .footer2 a {
         color: black;
     }
-.gridMapa {
+.contenedorGrid {
+    align-items: center;
+    margin-left: 100px;
     @media (max-width: 768px) {
-        display: block;
+        display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
     }   
 }    
 .gridMapa {

@@ -201,6 +201,7 @@ footer {
             align-items: center;
   }
   .footer-content .footerinfo {
+    text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -351,6 +352,7 @@ section #texto2 {
 
 @media (max-width: 768px) {
   .contenedorNosotros .fotoNosotros {
+    display: block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -365,19 +367,6 @@ section #texto2 {
   text-align: justify;
 }
 
-@media (max-width: 768px) {
-  .contenedorNosotros .textoSobreNosotros {
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
 .contenedorNosotros .colorh1 {
   color: #ff8695;
 }
@@ -388,18 +377,6 @@ section #texto2 {
   margin: 40px 30px;
   font-size: 18px;
   text-align: justify;
-}
-
-@media (max-width: 768px) {
-  .textoHistoria {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 .contenedorCarrusel {
@@ -418,9 +395,18 @@ section #texto2 {
   color: black;
 }
 
+.contenedorGrid {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 100px;
+}
+
 @media (max-width: 768px) {
-  .gridMapa {
-    display: block;
+  .contenedorGrid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -428,6 +414,7 @@ section #texto2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
 }
 
