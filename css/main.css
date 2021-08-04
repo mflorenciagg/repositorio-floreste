@@ -330,13 +330,55 @@ section #texto2 {
       flex-wrap: nowrap;
 }
 
-.fotoNosotros {
+@media (max-width: 768px) {
+  .contenedorNosotros {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contenedorNosotros .fotoNosotros {
   margin: 30px;
   padding: 15px;
   width: 650px;
 }
 
-.colorh1 {
+@media (max-width: 768px) {
+  .contenedorNosotros .fotoNosotros {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contenedorNosotros .textoSobreNosotros {
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .contenedorNosotros .textoSobreNosotros {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.contenedorNosotros .colorh1 {
   color: #ff8695;
 }
 
@@ -346,6 +388,18 @@ section #texto2 {
   margin: 40px 30px;
   font-size: 18px;
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .textoHistoria {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contenedorCarrusel {
@@ -362,6 +416,19 @@ section #texto2 {
 
 .footer2 a {
   color: black;
+}
+
+@media (max-width: 768px) {
+  .gridMapa {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .gridMapa {
@@ -382,6 +449,7 @@ h2#tituloMapa {
   grid-area: tituloMapa;
   margin: 20px;
   color: #ff8695;
+  text-align: justify;
 }
 
 p#informacion1 {
@@ -390,6 +458,7 @@ p#informacion1 {
   grid-area: informacion1;
   padding: 10px;
   margin: 5px;
+  text-align: justify;
 }
 
 iframe#mapaGoogle {

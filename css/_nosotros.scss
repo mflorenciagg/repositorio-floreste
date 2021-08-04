@@ -6,41 +6,75 @@
     padding: 25px;
     }
     
-    .contenedorNosotros {
+.contenedorNosotros {
         display: flex;
         flex-wrap: nowrap;
-    }
+
+        @media (max-width: 768px) {
+            display: block;
+            flex-direction: column;
+            align-items: center;
+        }
+    
     
     .fotoNosotros {
         margin: 30px;
         padding: 15px;
         width: 650px;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .textoSobreNosotros {
+        text-align: justify;
+
+        @media (max-width: 768px) {
+            display: block;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     .colorh1 {
         color: $colorRosaFuerte;
     }
-    .textoHistoria {
+}
+.textoHistoria {
         color: black;
         padding: 20px;
         margin: 40px 30px;
         font-size: 18px;
         text-align: justify;
+
+        @media (max-width: 768px) {
+
+            flex-direction: column;
+            align-items: center;
+        }
     }
     
-    .contenedorCarrusel {
+.contenedorCarrusel {
         display: flex;
         flex-wrap: nowrap;
     }
     
-    .footer2 {
+.footer2 {
     height: auto;
     }
     
-    .footer2 a {
+.footer2 a {
         color: black;
     }
-    
-    .gridMapa {
+.gridMapa {
+    @media (max-width: 768px) {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }   
+}    
+.gridMapa {
         height: 400px;
         display: grid;
         grid-template-columns: 50% 1fr; 
@@ -51,17 +85,19 @@
             "informacion1 mapaGoogle"
         }
     
-        h2#tituloMapa {
+    h2#tituloMapa {
             grid-area: tituloMapa;
             margin: 20px;
             color: $colorRosaFuerte;
+            text-align: justify;
         }
-        p#informacion1 {
+    p#informacion1 {
             grid-area: informacion1;
             padding: 10px;
             margin: 5px;
+            text-align: justify;
         }
-        iframe#mapaGoogle {
+    iframe#mapaGoogle {
             grid-area: mapaGoogle;
             margin-top: 20px;
         }
