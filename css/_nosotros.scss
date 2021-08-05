@@ -1,35 +1,31 @@
 
 .carruselfotos {
-    width: 1500px !important;
+    width: 1400px !important;
     height: auto;
     margin: 60px;
     padding: 25px;
-    }
-    
+}    
 .contenedorNosotros {
-        display: flex;
-        flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
         
-        @media (max-width: 768px) {
-            display: block;
-            flex-direction: column;
-            align-items: center;
-        }
-        
+    @media (max-width: 900px) {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .fotoNosotros {
         margin: 30px;
         padding: 15px;
         width: 650px;
-        @media (max-width: 768px) {
-            display: block;
-            flex-direction: column;
-            align-items: center;
-        }
     }
 
     .textoSobreNosotros {
         text-align: justify;
     }
+
     .colorh1 {
         color: $colorRosaFuerte;
     }
@@ -40,40 +36,37 @@
         margin: 40px 30px;
         font-size: 18px;
         text-align: justify;
-    }
-    
+}
+
 .contenedorCarrusel {
         display: flex;
         flex-wrap: nowrap;
-    }
-    
+}
+
 .footer2 {
     height: auto;
     }
-    
+
 .footer2 a {
         color: black;
     }
+
 .contenedorGrid {
     align-items: center;
     margin-left: 100px;
-    @media (max-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-    }   
+    
 }    
 .gridMapa {
         height: 400px;
         display: grid;
         grid-template-columns: 50% 1fr; 
         grid-template-rows: auto auto;
-        grid-gap: 0.5rem;
+        grid-gap: 1rem;
         grid-template-areas: 
             "tituloMapa mapaGoogle"
             "informacion1 mapaGoogle"
         }
+    
     
     h2#tituloMapa {
             grid-area: tituloMapa;
@@ -91,4 +84,3 @@
             grid-area: mapaGoogle;
             margin-top: 20px;
         }
-    

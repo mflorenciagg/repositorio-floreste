@@ -1,7 +1,9 @@
 
 footer {
-    margin: 5px;;
+    margin: 5px 0;
 }
+
+
 .footerDireccion {
     display: flex;
     flex-direction: column;
@@ -24,16 +26,21 @@ footer {
         align-items: center;
 
         .footerinfo {
-            text-align: center;
-            display: flex;
-            li:first-of-type {
-                margin-right: 20px;
-            }
+        text-align: center;
+        display: flex;
+        li:first-of-type {
+            margin-right: 20px;
+            }        
         }
     }
 
     .footerinfo {
         margin: 15px;
+        color: black;
+    }
+    
+    .colorblanco {
+        color: white;
     }
 }
 

@@ -42,7 +42,7 @@ ul {
 }
 
 header {
-  padding: 16px 0;
+  padding-top: 16px;
 }
 
 header .header-container {
@@ -62,7 +62,11 @@ header .header-container .menu-abrir, header .header-container .menu-cerrar {
   display: none;
 }
 
-@media (max-width: 768px) {
+header .header-container .logo2 {
+  display: none;
+}
+
+@media (max-width: 900px) {
   header .header-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -72,15 +76,24 @@ header .header-container .menu-abrir, header .header-container .menu-cerrar {
         -ms-flex-align: center;
             align-items: center;
   }
+  header .header-container .logoIndex {
+    display: none;
+  }
+  header .header-container .logo2 {
+    display: block;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    margin-bottom: 0;
+  }
   header .header-container a {
     margin-bottom: 20px;
+    color: white;
   }
 }
 
 header .header-container a {
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
-  color: black;
 }
 
 @media (max-width: 552px) {
@@ -92,13 +105,23 @@ header .header-container a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  header .header-container .logo {
+  header .header-container .logoIndex {
+    display: none;
+  }
+  header .header-container .logo2 {
+    display: block;
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     margin-bottom: 0;
   }
   header .header-container .menu-abrir, header .header-container .menu-cerrar {
     display: block;
+  }
+  header .header-container .menu-abrir {
+    color: #f79ea9;
+  }
+  header .header-container .menuabrir1 {
+    color: white;
   }
   header .header-container nav {
     position: absolute;
@@ -138,6 +161,10 @@ header .header-container nav {
           justify-content: flex-end;
 }
 
+header .header-container nav .colorblanco {
+  color: white;
+}
+
 header .header-container nav a {
   margin-left: 14px;
   padding: 5px 10px;
@@ -152,7 +179,7 @@ header .header-container nav a:hover {
 }
 
 footer {
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .footerDireccion {
@@ -213,6 +240,11 @@ footer {
 
 .footer-content .footerinfo {
   margin: 15px;
+  color: black;
+}
+
+.footer-content .colorblanco {
+  color: white;
 }
 
 .footerRedes {
@@ -274,7 +306,7 @@ section .flexBienvenidos {
       grid-template-columns: 50% 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  grid-gap: 0.5rem;
+  grid-gap: 2rem;
       grid-template-areas: "texto1 ." ". texto2";
 }
 
@@ -316,8 +348,12 @@ section #texto2 {
   }
 }
 
+.tituloH1 {
+  margin-top: 50px;
+}
+
 .carruselfotos {
-  width: 1500px !important;
+  width: 1400px !important;
   height: auto;
   margin: 60px;
   padding: 25px;
@@ -329,9 +365,12 @@ section #texto2 {
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .contenedorNosotros {
     display: block;
     -webkit-box-orient: vertical;
@@ -348,19 +387,6 @@ section #texto2 {
   margin: 30px;
   padding: 15px;
   width: 650px;
-}
-
-@media (max-width: 768px) {
-  .contenedorNosotros .fotoNosotros {
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 
 .contenedorNosotros .textoSobreNosotros {
@@ -402,22 +428,6 @@ section #texto2 {
   margin-left: 100px;
 }
 
-@media (max-width: 768px) {
-  .contenedorGrid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: hidden;
-  }
-}
-
 .gridMapa {
   height: 400px;
   display: -ms-grid;
@@ -426,7 +436,7 @@ section #texto2 {
       grid-template-columns: 50% 1fr;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
       grid-template-areas: "tituloMapa mapaGoogle" "informacion1 mapaGoogle";
 }
 
@@ -528,9 +538,11 @@ iframe#mapaGoogle {
 }
 
 .contenedor {
-  width: 900px;
-  height: 1000px;
+  max-width: 1200px;
+  width: 90%;
+  height: 100%;
   position: relative;
+  margin: 0 auto;
 }
 
 .contenedor-texto {
@@ -631,14 +643,9 @@ iframe#mapaGoogle {
   margin-top: 0;
 }
 
-.bodyPedidos {
-  height: 900px;
-}
-
-.titulo-eventos {
-  font-size: 24px;
-  color: #f79ea9;
-  margin-bottom: 30px;
+.titulo-contacto {
+  font-size: 1.5em;
+  color: white;
 }
 
 .contenedorForm {
@@ -648,11 +655,12 @@ iframe#mapaGoogle {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/producto-alfajores.JPG);
-  background-size: cover;
-  border-radius: 3px;
-  padding-top: 60px;
-  padding-bottom: 50px;
+  background-color: #eed4d7;
+  opacity: 50;
+  border-radius: 2px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin: 0 2em;
 }
 
 .formulario1 {
@@ -681,10 +689,8 @@ iframe#mapaGoogle {
 .textoForm {
   margin-top: 30px;
   font-size: 18px;
-  color: #f79ea9;
+  color: white;
   text-align: center;
-  margin-bottom: 50px;
-  padding-bottom: 10px;
 }
 
 .botonPedidos {

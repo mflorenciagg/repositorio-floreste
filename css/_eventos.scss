@@ -1,8 +1,10 @@
 
 .contenedor {
-    width: 900px;
-    height: 1000px;
+    max-width: 1200px;
+    width: 90%;
+    height: 100%;
     position: relative;
+    margin: 0 auto;
 }
 
 .contenedor-texto {
@@ -11,7 +13,6 @@
     width: 600px;
     height: 800px;
     left: 700px; top: 40px;
-    
 }
 
 .contenedor-texto h1 {
@@ -86,4 +87,3 @@
 .contenedor-img:hover img, .contenedor-img:hover .glow-wrap {
     margin-top: 0;
 }
-

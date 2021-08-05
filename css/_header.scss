@@ -1,41 +1,67 @@
 
 header {
-    padding: 16px 0;
+    padding-top: 16px;
 
     .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+        
 
         .menu-abrir, .menu-cerrar {
             display: none;
         }
 
-        @media (max-width: 768px) {
+        .logo2 {
+            display: none;
+        }
+        @media (max-width: 900px) {
             flex-direction: column;
             align-items: center;
+            .logoIndex {
+                display: none;
+            }
+
+            .logo2 {
+                display: block;
+                flex-basis: 70%;
+                margin-bottom: 0;
+            }
 
             a {
                 margin-bottom: 20px;
+                color: white;
             }
         }
         a {
             flex-basis: 30%;
-            color: black;
         }
+        
 
         @media (max-width: 552px) {
             flex-direction: row;
             justify-content: space-around;
 
-            .logo {
+            .logoIndex {
+                display: none;
+            }
+
+            .logo2 {
+                display: block;
                 flex-basis: 70%;
                 margin-bottom: 0;
             }
 
             .menu-abrir, .menu-cerrar {
                 display: block;
+            }
+
+            .menu-abrir {
+                    color: $colorRosaMed;
+            }
+            .menuabrir1 {
+                color: white;
             }
 
             nav {
@@ -62,6 +88,9 @@ header {
             flex-basis: 65%;
             display: flex;
             justify-content: flex-end;
+            .colorblanco {
+                color: white;
+            }
 
             a {
                 margin-left: 14px;
