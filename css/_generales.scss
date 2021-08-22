@@ -1,13 +1,11 @@
 //GENERALES
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 html{
-    height: 100vh;
-    position: relative;
+    min-height: 100%;
+    width: auto;
 }
 
 //VARIABLES
@@ -21,6 +19,8 @@ body {
     font-family: $fuentePpal !important;
     height: 1200px;
     width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .container1 {

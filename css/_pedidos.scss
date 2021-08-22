@@ -1,17 +1,22 @@
 
+.espaciado-formulario {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 .titulo-contacto {
     font-size: 1.5em;
     color: white;
+    font-weight: 500;
 }
 .contenedorForm {
     display: flex;
     justify-content: center;
-    background-color: $colorFloreste;
-    opacity: 50;
+    background-color: rgba($color: $colorFloreste, $alpha: 0.7);
 	border-radius: 2px;
     padding-top: 40px;
     padding-bottom: 30px;
     margin: 0 2em;
+    margin-bottom: 40vh;
 }
 
 .formulario1 {
@@ -21,20 +26,22 @@
 	padding: 10px;
 	display: flex;
 	align-items: center;
-	position: relative; 
-    background-color: #fff;  
-    box-shadow: 10px 15px 25px 0 rgba(.2,0,0,1);;  
+    background-color: #fff;
+    box-shadow: 10px 15px 25px 0 rgba(.2,0,0,1);
+    
+    .space-form {
+        margin: 4px;
+        display: block;
+    }
 }
 
-.estiloform {
-    align-items: center;
-}
 
 .textoForm {
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 2rem;
     color: white;
     text-align: center;
+    align-items: center;
 }
 
 .botonPedidos {

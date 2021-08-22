@@ -30,22 +30,22 @@
                 </nav>
             </div>
         </header>
-        <hr>
-        <section class="contenedorNosotros">
-            <div>
-                <img class="fotoNosotros" src="../media/sobre_nosotros.png" alt="imagen que dice la frase te contamos un poco sobre nosotros">
-            </div>
-            <div class="textoSobreNosotros">
-                <h1 class="colorh1">El inicio de esta pasión se dío algo asi:</h1>
-                <p class="textoHistoria">Floreste es un emprendimiento que nace en el año 2011, con dos hermanas a las cuales les gustaba cocinar, hacer cosas dulces, y compartirlas con sus familiares.
-                Ese año, familiares y amigos comenzaron a pedirles que le vendan ciertos postres o bandejas de desayuno, por lo cual empezaron a ofrecer para fechas determinadas;
-            Por ejemplo en Pascuas, Dia del Padre, Navidad, etc. 
-            Cada día se iban agregando más pedidos, hasta que llego el momento de comprarse su primer horno! Desde ese momento, no dejaron de cocinar, y siempre fueron para adelante.
-            En el año 2018 fueron por más, y junto con un nuevo socio, abrian las puertas de su local comercial en el centro de la Ciudad de Corrientes.
-            Hoy Floreste pasó de un emprendimiento de dos hermanas, a una familia con 6 integrantes que lo dan todo siempre! </p>
-            </div>
-        </section>
-
+        <main>
+            <section class="contenedorNosotros">
+                <div class="contenedor-sobrenosotros">
+                    <p>Te contamos un poco</p>
+                    <h1>SOBRE NOSOTROS</h1>
+                </div>
+                <div class="contenedor-historia">
+                    <p class="textoHistoria">Floreste es un emprendimiento que nace en el año 2011, con dos hermanas a las cuales les gustaba cocinar, hacer cosas dulces, y compartirlas con sus familiares.
+                    Ese año, familiares y amigos comenzaron a pedirles que le vendan ciertos postres o bandejas de desayuno, por lo cual empezaron a ofrecer para fechas determinadas;
+                Por ejemplo en Pascuas, Dia del Padre, Navidad, etc. 
+                Cada día se iban agregando más pedidos, hasta que llego el momento de comprarse su primer horno! Desde ese momento, no dejaron de cocinar, y siempre fueron para adelante.
+                En el año 2018 fueron por más, y junto con un nuevo socio, abrian las puertas de su local comercial en el centro de la Ciudad de Corrientes.
+                Hoy Floreste pasó de un emprendimiento de dos hermanas, a una familia con 6 integrantes que lo dan todo siempre! </p>
+                </div>
+            </section>
+        </main>
         <section class="contenedorCarrusel">
             <div id="carouselExampleDark" class="carousel carousel-dark slide carruselfotos" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -57,43 +57,43 @@
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="../media/sobreNosotros.JPG" class="d-block w-100 img-fluid" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>En plena acción</h5>
+                            <h3>En plena acción</h3>
                             <p>Cortamos las masas del grosor exacto para nuestro paladar.</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="2000">
                         <img src="../media/sobrenosotros4.JPG" class="d-block w-100 img-fluid" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                        <h5>Merenguitos</h5>
-                        <p>El bocadito ideal para el antojo después de cenar.</p>
+                            <h3>Merenguitos</h3>
+                            <p>El bocadito ideal para el antojo después de cenar.</p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="../media/sobrenosotros3.JPG" class="d-block w-100 img-fluid" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>La frutilla del postre</h5>
+                            <h3>La frutilla del postre</h3>
                             <p>Siempre frutas frescas y de primera calidad para resaltar los sabores.</p>
                         </div>
                     </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-            </div>
-            </section>       
+            </section>
             <section class="gridMapa contenedorGrid">
                 <h2 id="tituloMapa" class="animate__animated animate__fadeInLeft">Nuestro lugarcito </h2>
                 <p id="informacion1"> Estamos en el centro de la Ciudad de Corrientes, a una cuadra del Parque Camba Cuá! Nuestra dirección es Tucuman 775, y estamos de Lunes a Sabados de 8:00hs a 12:30hs y por la tarde
                 de 16:30hs a 20:30hs. Los domingos descansamos! 
             Podes ver la ubicación exacta en el siguiente mapa:</p>
-                <iframe id="mapaGoogle" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14160.447182644606!2d-58.841468!3d-27.4657787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x80c9a9fafdd9c3b6!2sFloreste%20-%20Reposteria!5e0!3m2!1ses-419!2sar!4v1623174885452!5m2!1ses-419!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </section>
-    <hr>        
+                <iframe id="mapaGoogle" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14160.447182644606!2d-58.841468!3d-27.4657787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x80c9a9fafdd9c3b6!2sFloreste%20-%20Reposteria!5e0!3m2!1ses-419!2sar!4v1623174885452!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+
     <footer>
         <div class="footer-content footer2">
             <ul class="footerinfo">
